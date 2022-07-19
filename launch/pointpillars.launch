@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="rosbag" type="play" name="player" output="log" args="-l /media/dyn/DYN1/Research/dataset/rosbag/我们实车/20220107/raw_image.bag" />
+  <node name="pointpillars_ros" type="ros.py" pkg="pointpillars_ros" output="screen"/>
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find pointpillars_ros)/launch/pointpillars.rviz" />
+</launch>

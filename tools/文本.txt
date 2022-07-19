@@ -1,0 +1,3 @@
+python3 demo.py --cfg_file cfgs/kitti_models/pointpillar.yaml --ckpt models/pointpillar_7728.pth  --data_path data/kitti/000000.bin
+
+python3 demo.py --cfg_file cfgs/kitti_models/pointpillar.yaml --ckpt models/pointpillar_7728.pth  --data_path /home/dyn/文档/my_learn_code/PCL/11_pc2bin/results/1650424650.800322.bin
