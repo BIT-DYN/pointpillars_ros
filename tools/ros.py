@@ -87,8 +87,8 @@ class Pointpillars_ROS:
         np_p = np.array(list(pcl_msg), dtype=np.float32)
         # 旋转轴
         rand_axis = [0,1,0]
-        #旋转角度
-        yaw = 0.1047
+        #旋转角度0.1047
+        yaw = 0
         #返回旋转矩阵
         rot_matrix = self.rotate_mat(rand_axis, yaw)
         np_p_rot = np.dot(rot_matrix, np_p[:,:3].T).T
